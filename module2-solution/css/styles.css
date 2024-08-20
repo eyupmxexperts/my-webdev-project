@@ -17,22 +17,11 @@ header {
 
 .section {
     border: 1px solid black;
-    padding: 40px; /* Vergrote padding om ruimte voor de titel te creëren */
-    margin: 20px 0; /* Vergrote margin rondom secties */
+    padding: 20px; /* Zorgt voor ruimte binnen de sectie */
+    margin: 20px; /* Voeg marge toe rondom de secties */
     position: relative;
     background-color: #333; /* Donkergrijze achtergrondkleur voor alle secties */
     color: #fff; /* Witte tekstkleur voor leesbaarheid op donkergrijs */
-}
-
-.title {
-    border: 1px solid black;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: pink; /* Voorbeeldkleur, pas aan per sectie */
-    color: black; /* Standaardkleur voor titeltekst */
-    z-index: 1; /* Zorgt ervoor dat de titel boven de inhoud verschijnt */
 }
 
 /* Specifieke achtergrondkleur voor titels in sectie 1 */
@@ -54,30 +43,24 @@ header {
 /* Layout for desktop */
 @media (min-width: 992px) {
     .section {
-        width: 33.33%;
+        width: calc(33.33% - 40px); /* Houd rekening met marge om ruimte te creëren */
         float: left;
+        margin: 20px; /* Zorg voor ruimte rondom de secties */
     }
 }
 
 /* Layout for tablet */
 @media (min-width: 768px) and (max-width: 991px) {
     .section {
-        width: 100%;
-    }
-
-    #section1, #section2 {
-        float: left;
-        width: 50%;
-    }
-
-    #section3 {
-        clear: both;
+        width: calc(50% - 40px); /* Houd rekening met marge om ruimte te creëren */
+        margin: 20px; /* Zorg voor ruimte rondom de secties */
     }
 }
 
 /* Layout for mobile */
 @media (max-width: 767px) {
     .section {
-        width: 100%;
+        width: calc(100% - 40px); /* Houd rekening met marge om ruimte te creëren */
+        margin: 20px; /* Zorg voor ruimte rondom de secties */
     }
 }
