@@ -17,9 +17,9 @@ header {
 
 .section {
     border: 1px solid black;
-    padding: 20px; /* Zorgt voor ruimte binnen de sectie */
-    margin: 20px; /* Voeg marge toe rondom de secties */
-    position: relative;
+    padding: 20px;
+    margin: 20px;
+    position: relative; /* Zorg ervoor dat de .title absoluut gepositioneerd wordt ten opzichte van .section */
     background-color: #333; /* Donkergrijze achtergrondkleur voor alle secties */
     color: #fff; /* Witte tekstkleur voor leesbaarheid op donkergrijs */
 }
@@ -47,7 +47,7 @@ header {
     .section {
         width: calc(33.33% - 40px); /* Houd rekening met marge om ruimte te creëren */
         float: left;
-        margin: 20px; /* Zorg voor ruimte rondom de secties */
+        margin: 20px;
     }
 }
 
@@ -77,6 +77,6 @@ header {
 @media (max-width: 767px) {
     .section {
         width: calc(100% - 40px); /* Houd rekening met marge om ruimte te creëren */
-        margin: 20px; /* Zorg voor ruimte rondom de secties */
+        margin: 20px;
     }
 }
