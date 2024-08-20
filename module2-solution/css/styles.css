@@ -20,6 +20,7 @@ header {
     padding: 20px;
     margin: 10px 0;
     position: relative;
+    background-color: #f0f0f0; /* Achtergrondkleur van alle secties grijs */
 }
 
 .title {
@@ -28,7 +29,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    color: black; /* Zorg ervoor dat de tekstkleur zichtbaar is tegen de achtergrondkleur */
+    color: black; /* Standaard kleur van tekst in titels */
 }
 
 /* Specifieke achtergrondkleur voor titels in sectie 1 */
@@ -39,6 +40,7 @@ header {
 /* Specifieke achtergrondkleur voor titels in sectie 2 */
 #section2 .title {
     background-color: red; /* Achtergrondkleur voor de titel in sectie 2 (Beef) */
+    color: white; /* Tekstkleur voor de titel in sectie 2 (Beef) */
 }
 
 /* Specifieke achtergrondkleur voor titels in sectie 3 */
