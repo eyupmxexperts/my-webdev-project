@@ -20,11 +20,10 @@ header {
     padding: 20px;
     margin: 10px 0;
     position: relative;
-#section1 {
-    background-color: pink; /* Kleur voor de achtergrond */
 }
 
-    
+#section1 {
+    background-color: pink; /* Kleur voor de achtergrond */
 }
 
 .title {
