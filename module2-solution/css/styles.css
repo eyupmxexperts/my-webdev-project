@@ -22,17 +22,28 @@ header {
     position: relative;
 }
 
-#section1 {
-    background-color: pink; /* Kleur voor de achtergrond */
-}
-
 .title {
-    background-color: #f0f0f0;
     border: 1px solid black;
     padding: 10px;
     position: absolute;
     top: 0;
     right: 0;
+    color: black; /* Zorg ervoor dat de tekstkleur zichtbaar is tegen de achtergrondkleur */
+}
+
+/* Specifieke achtergrondkleur voor titels in sectie 1 */
+#section1 .title {
+    background-color: pink; /* Achtergrondkleur voor de titel in sectie 1 (Chicken) */
+}
+
+/* Specifieke achtergrondkleur voor titels in sectie 2 */
+#section2 .title {
+    background-color: red; /* Achtergrondkleur voor de titel in sectie 2 (Beef) */
+}
+
+/* Specifieke achtergrondkleur voor titels in sectie 3 */
+#section3 .title {
+    background-color: yellow; /* Achtergrondkleur voor de titel in sectie 3 (Sushi) */
 }
 
 /* Layout for desktop */
