@@ -17,8 +17,8 @@ header {
 
 .section {
     border: 1px solid black;
-    padding: 20px;
-    margin: 10px 0;
+    padding: 40px; /* Vergrote padding om ruimte voor de titel te creëren */
+    margin: 20px 0; /* Vergrote margin rondom secties */
     position: relative;
     background-color: #333; /* Donkergrijze achtergrondkleur voor alle secties */
     color: #fff; /* Witte tekstkleur voor leesbaarheid op donkergrijs */
@@ -30,7 +30,9 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    color: black; /* Standaard kleur van tekst in titels */
+    background-color: pink; /* Voorbeeldkleur, pas aan per sectie */
+    color: black; /* Standaardkleur voor titeltekst */
+    z-index: 1; /* Zorgt ervoor dat de titel boven de inhoud verschijnt */
 }
 
 /* Specifieke achtergrondkleur voor titels in sectie 1 */
